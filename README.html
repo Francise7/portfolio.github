@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Francis Ernest Landrito Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="name">Francis Ernest Landrito</h1>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <img src="pics/profile.jpg" alt="Francis Ernest Landrito" class="profile-pic">
+    <p>Hello! I'm Francis Ernest Landrito, an aspiring web developer passionate about crafting clean and user-friendly websites. I love working with HTML, CSS, and exploring new ways to bring ideas to life through web technologies.</p>
+  </section>
+
+  <section id="skills" class="skills container">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <section id="certificates" class="certificates container">
+    <h2>Certificates</h2>
+    <div class="certificate-card">
+      <h3>Web Development Fundamentals</h3>
+      <p>Issued by CodeCamp Philippines</p>
+    </div>
+    <div class="certificate-card">
+      <h3>Python Programming Basics</h3>
+      <p>Issued by LearnHub</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Personal Website</h3>
+      <p>A fully responsive personal portfolio site made with HTML, CSS, and animations.</p>
+    </div>
+    <div class="project-card">
+      <h3>To-Do List App</h3>
+      <p>A simple JavaScript to-do list with local storage and minimalist design.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <form target="_blank" action="https://formsubmit.co/princess.gonzaga0826@gmail.com" method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col"><input type="text" name="name" placeholder="Full Name" required></div>
+          <div class="col"><input type="email" name="email" placeholder="Email Address" required></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit Form</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Francis Ernest Landrito. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
